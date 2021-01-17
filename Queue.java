@@ -17,8 +17,8 @@ public class Queue {
 		int ch;
 		do
 		  {
-			System.out.printf("\n----Menu----\n\n1.Enqueue\n2.Dequeue\n3.Exit\n");
-			System.out.printf("Enter the choice#:");
+			System.out.println("\n----Menu----\n\n1.Enqueue\n2.Dequeue\n3.Exit\n");
+			System.out.println("Enter the choice#:");
 			ch=sc.nextInt();
 		    switch (ch)
 		    {
@@ -38,7 +38,7 @@ public class Queue {
 		Scanner sc1 = new Scanner(System.in);
 		int n;
 		
-		System.out.printf("Enter the size of Queue:");
+		System.out.println("Enter the size of Queue:");
 		n=sc1.nextInt();
 		
 		new Queue(n);
@@ -76,12 +76,12 @@ public class Queue {
 	  else
 	  {
 	    item = Ar[front];
-	    System.out.printf("The element deleted is %d\n", item);
+	    System.out.println("The element deleted is %d\n", item);
 	    if (front == rear)
 	    {
 	      front = -1;
 	      rear = -1;
-	      System.out.printf("\n---Error! Queue is empty---\n\n");
+	      System.out.println("\n---Error! Queue is empty---\n\n");
 	    }
 	    else
 	    {
@@ -95,12 +95,12 @@ public class Queue {
 	public static void display(int rear)
 	{
 	  int i;
-	  System.out.printf("\nThe current Queue is\n");
+	  System.out.println("\nThe current Queue is\n");
 	  for (i = front; i <= rear; i++)
 	  {
-		  System.out.printf("%d ", Ar[i]);
+		  System.out.println("%d ", Ar[i]);
 	  }
-	  System.out.printf("\n");
+	  System.out.println("\n");
 	}
 	
 	
