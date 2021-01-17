@@ -9,7 +9,7 @@ public Area(int l, int b){
 length=l;
 breadth=b;
 }
-public  int area()
+public  int returnArea()
 {
   return length*breadth;
 }
